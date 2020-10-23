@@ -53,7 +53,7 @@ public class Player : MonoBehaviour
                 laserPrefab, transform.position,
                 Quaternion.identity) as GameObject;
             laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileSpeed);
-            yield return new WaitForSeconds(projecttileFiringPeriod);
+            yield return new WaitForSeconds(projecttileFiringPeriod); 
         }
     }
 
