@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -2819287545656114595}
   - component: {fileID: 4946905134412472660}
   - component: {fileID: 6710503472160462567}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Levi
   m_TagString: Untagged
   m_Icon: {fileID: 0}

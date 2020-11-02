@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1262277422678822741}
   - component: {fileID: 1262277422678822740}
   - component: {fileID: 1262277422678822742}
-  - component: {fileID: -6912001442235273292}
+  - component: {fileID: 7953287375726019758}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -102,8 +102,8 @@ MonoBehaviour:
     type: 3}
   projectileSpeed: 10
   projecttileFiringPeriod: 0.3
---- !u!58 &-6912001442235273292
-CircleCollider2D:
+--- !u!60 &7953287375726019758
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -115,6 +115,28 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0048480034}
-  serializedVersion: 2
-  m_Radius: 0.347466
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.98, y: 0.75}
+    newSize: {x: 0.98, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.03527326, y: 0.375}
+      - {x: -0.039488398, y: 0.36868572}
+      - {x: -0.105694175, y: 0.22342968}
+      - {x: -0.39421514, y: -0.107628554}
+      - {x: -0.48368606, y: -0.21657044}
+      - {x: -0.48999998, y: -0.315}
+      - {x: -0.22133696, y: -0.2835188}
+      - {x: -0.15211636, y: -0.375}
+      - {x: 0.14633137, y: -0.38447094}
+      - {x: 0.2343297, y: -0.27732754}
+      - {x: 0.48999998, y: -0.30290145}
+      - {x: 0.48999998, y: -0.21288376}
+      - {x: 0.10580243, y: 0.2307852}
