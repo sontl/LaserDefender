@@ -98,6 +98,9 @@ MonoBehaviour:
   moveSpeed: 10
   padding: 0.5
   health: 200
+  deathSound: {fileID: 8300000, guid: f22c17eac31854df695ddae96b414120, type: 3}
+  soundVolume: 0.468
+  shootSound: {fileID: 8300000, guid: e0ef3e37dd0f74063a65010b20cec3e4, type: 3}
   laserPrefab: {fileID: 69756738420495366, guid: 7c53298e6898a46e1986a7ee2c8b7eab,
     type: 3}
   projectileSpeed: 10
@@ -112,7 +115,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
