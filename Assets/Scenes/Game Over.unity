@@ -716,7 +716,7 @@ PrefabInstance:
     - target: {fileID: 3469020825611994860, guid: 41c7c4891713741f2b4e2fd3902d3cc1,
         type: 3}
       propertyPath: m_Name
-      value: Starfield
+      value: Starfield Far
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41c7c4891713741f2b4e2fd3902d3cc1, type: 3}
