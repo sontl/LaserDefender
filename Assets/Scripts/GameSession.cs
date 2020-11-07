@@ -6,6 +6,8 @@ using UnityEngine;
 public class GameSession : MonoBehaviour
 {
     private int score = 0;
+    private int health = 400;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -31,7 +33,16 @@ public class GameSession : MonoBehaviour
     public void SetScore(int score)
     {
         this.score += score;
-        Debug.Log("score: " + this.score);
+    }
+
+    public int GetHealth()
+    {
+        return health;
+    }
+
+    public void SetHealth(int health)
+    {
+        this.health = health;
     }
 
     public void ResetGame()

@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     [Header("Player Movement")]
     [SerializeField] int moveSpeed;
     [SerializeField] float padding;
-    [SerializeField] int health = 200;
+    [SerializeField] int health = 400;
     [SerializeField] AudioClip deathSound;
     [SerializeField] [Range(0, 1)] float soundVolume = 0.7f;
     [SerializeField] AudioClip shootSound;
@@ -25,10 +25,12 @@ public class Player : MonoBehaviour
     float yMin;
     float yMax;
 
+    GameSession gameSession;
     void Start()
     {
         SetUpMoveBoundaries();
-        //StartCoroutine(NameOfCoroutine());
+        gameSession = FindObjectOfType<GameSession>();
+        gameSession.SetHealth(health);
     }
 
 
@@ -101,6 +103,7 @@ public class Player : MonoBehaviour
     private void ProcessHit(DamageDealer damageDealer)
     {
         health -= damageDealer.GetDamage();
+        gameSession.SetHealth(health);
         damageDealer.Hit();
         if (health <= 0)
         {

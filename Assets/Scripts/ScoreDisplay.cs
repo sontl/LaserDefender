@@ -18,7 +18,6 @@ public class ScoreDisplay : MonoBehaviour
     private void Display(GameSession gameSession)
     {
         string score = gameSession.GetScore().ToString();
-        Debug.Log("score: " + score);
         GetComponent<Text>().text = score;
     }
 
